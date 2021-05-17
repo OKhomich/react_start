@@ -1,18 +1,17 @@
 import React from 'react';
 import './App.css';
-import Technologies from './Technologies.js';
-import Header from './Header.js';
+
+import Header from './components/Header';
+import Navbar from './components/Navbar';
+import Profile from './components/Profile';
 
 const App = () => {
   return (
-    <section>
+    <div className="container">
       <Header />
-      <div>first div</div>
-      <div className="App">
-        <p>My first Change</p>
-        <Technologies />
-      </div>
-    </section>
+      <Navbar />
+      <Profile />
+    </div>
   );
 }
 
