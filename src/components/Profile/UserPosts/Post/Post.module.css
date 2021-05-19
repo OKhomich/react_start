@@ -1,0 +1,19 @@
+.item {
+    display: flex;
+    color:greenyellow;
+    margin: 20px;
+}
+
+.post_pic {
+    width: 50px;
+    height: 50px;
+    background: yellow;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.item span{
+    align-self: flex-end;
+    color: goldenrod;
+    cursor: pointer;
+}

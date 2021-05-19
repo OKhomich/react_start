@@ -1,14 +1,7 @@
 import React from 'react';
 import styles from './UserPosts.module.css';
 
-const Post = () => {
-    return (
-        <div className={styles.item}>
-                    <div className={styles.post_pic}></div>
-                    <p>Hi, I hope on big progres in react</p>
-                </div>
-    )
-}
+import Post from './Post/Post';
 
 const UserPosts = () => {
     return (
@@ -20,11 +13,9 @@ const UserPosts = () => {
             <input className={styles.send_post} type="submit" value="send" />
 
             <div className={styles.posts}>
-                <Post />
-                <Post />
-                <Post />
-                
-        
+                <Post likes='10' message="Hi, I am learning 16 lesson's" />
+                <Post likes='6' message="Hi, I hope on big progres in react" />
+                <Post likes='3'  message="Hello, it is my first post" />
             </div>
         </section>
     )
